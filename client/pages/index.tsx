@@ -1,15 +1,11 @@
+import React, { ReactNode } from "react";
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import { CommonLayout } from "../components";
 
-const Home: NextPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Shared skills app</title>
-      </Head>
-    </div>
-  );
+export default function Home() {
+  return <div>Index page</div>;
+}
+
+Home.getLayout = function getLayout(page: ReactNode): ReactNode {
+  return <CommonLayout>{page}</CommonLayout>;
 };
-
-export default Home;
