@@ -1,7 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Header = () => {
+  const router = useRouter();
+
   return (
     <header>
       <h1>Shared skills</h1>
