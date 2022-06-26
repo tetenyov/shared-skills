@@ -1,4 +1,6 @@
 export { Header } from "./Header";
 export { CommonLayout } from "./CommonLayout";
-export { TestForm } from "./TestForm";
-export type { TestFormProps } from "./TestForm";
+export { TestQuestion } from "./TestQuestion";
+export type { TestQuestionProps } from "./TestQuestion";
+export { TestResultSubmitForm } from "./TestResultSubmitForm";
+export type { TestResultSubmitFormProps } from "./TestResultSubmitForm";
